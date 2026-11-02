@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AegisShield AppProtect - Prototype</title>
+  <style>
+    :root { color-scheme: light; --ink:#173b3b; --muted:#5f7774; --line:#d4e1dc; --soft:#edf4f0; --card:#fffdf9; --green:#0d7569; --lime:#8bc83f; --red:#c75b50; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f5f7f5; color:var(--ink); font-family:Arial, sans-serif; }
+    .shell { max-width:1180px; margin:0 auto; padding:32px 22px 60px; }
+    .notice { border:1px solid #d8e8cb; background:#f1f8e9; color:#38631d; padding:12px 16px; border-radius:12px; font-size:14px; }
+    header { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; margin:28px 0 24px; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-size:42px; letter-spacing:-.05em; margin-bottom:8px; }
+    h2 { font-size:22px; letter-spacing:-.03em; }
+    .sub { color:var(--muted); line-height:1.6; max-width:720px; }
+    .brand { font-weight:800; font-size:18px; text-align:right; }
+    .brand span { color:var(--green); }
+    .layout { display:grid; grid-template-columns:220px 1fr; gap:18px; }
+    nav, .card { background:var(--card); border:1px solid var(--line); border-radius:16px; }
+    nav { padding:14px; align-self:start; }
+    nav a { display:block; color:var(--ink); text-decoration:none; font-weight:700; padding:12px 14px; border-radius:10px; }
+    nav a.active, nav a:hover { background:var(--soft); color:var(--green); }
+    main { display:grid; gap:16px; }
+    .card { padding:22px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .metric { padding:16px; background:var(--soft); border-radius:12px; }
+    .metric strong { display:block; font-size:28px; margin-top:6px; }
+    .metric small, .muted { color:var(--muted); }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th,td { text-align:left; padding:13px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--green); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+    .pill { display:inline-flex; align-items:center; gap:6px; border-radius:999px; padding:6px 10px; font-size:12px; font-weight:800; }
+    .ok { background:#e8f5df; color:#38631d; } .warn { background:#fff0cf; color:#815414; } .danger { background:#fde7e4; color:#8b332c; }
+    .event { border-left:4px solid var(--red); padding:14px 16px; background:#fff6f4; border-radius:10px; }
+    .button { display:inline-block; background:var(--green); color:white; text-decoration:none; font-weight:800; border-radius:999px; padding:11px 16px; }
+    footer { margin-top:22px; color:var(--muted); font-size:13px; }
+    @media (max-width:760px) { header { display:block; } .brand { text-align:left; margin-top:18px; } .layout { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } h1 { font-size:34px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="notice"><strong>Prototype only:</strong> fictional AppProtect screens using simulated data. This page does not inspect traffic or block requests.</div>
+    <header>
+      <div><h1>AppProtect overview</h1><p class="sub">A simple place to see application health, review blocked requests, and manage safe rule changes for BookEasy.</p></div>
+      <div class="brand">Aegis<span>Shield</span><br>AppProtect</div>
+    </header>
+    <div class="layout">
+      <nav aria-label="AppProtect navigation">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#applications">Applications</a>
+        <a href="#rules">Rules</a>
+        <a href="#events">Events</a>
+        <a href="#audit">Audit and access</a>
+      </nav>
+      <main>
+        <section id="overview" class="card"><h2>BookEasy application</h2><p class="muted">Production-like test environment · Owner: BookEasy Security</p><div class="grid"><div class="metric"><small>Protection mode</small><strong>Monitor</strong><span class="pill ok">Safe for pilot</span></div><div class="metric"><small>Requests today</small><strong>18,420</strong><span class="muted">Simulated</span></div><div class="metric"><small>Possible false positives</small><strong>3</strong><span class="pill warn">Review needed</span></div></div></section>
+        <section id="applications" class="card"><h2>Applications</h2><table><thead><tr><th>Application</th><th>Environment</th><th>Mode</th><th>Health</th></tr></thead><tbody><tr><td><strong>BookEasy scheduling</strong><br><span class="muted">bookeasy.example</span></td><td>Test</td><td>Monitor</td><td><span class="pill ok">Healthy</span></td></tr></tbody></table></section>
+        <section id="rules" class="card"><h2>Rules</h2><table><thead><tr><th>Rule</th><th>Action</th><th>Status</th><th>Last change</th></tr></thead><tbody><tr><td><strong>Suspicious login burst</strong><br><span class="muted">Protect login endpoint</span></td><td>Monitor</td><td><span class="pill ok">Enabled</span></td><td>Today · Eva PM</td></tr><tr><td><strong>Unexpected request pattern</strong><br><span class="muted">Review before block</span></td><td>Block in test</td><td><span class="pill warn">Needs review</span></td><td>Yesterday · Security</td></tr></tbody></table></section>
+        <section id="events" class="card"><h2>Event detail</h2><div class="event"><strong>Possible false positive</strong><p>Request to create a booking matched “Unexpected request pattern.” The request is from the approved BookEasy test user.</p><p class="muted">Time: 10:42 AM · Action: Block in test · Request ID: SIM-2048</p><a class="button" href="#exception">Review safe exception</a></div></section>
+        <section id="exception" class="card"><h2>Exception review</h2><p class="muted">Create a short-lived exception only after the request is confirmed as safe.</p><table><tbody><tr><th>Reason</th><td>Allow approved booking test flow</td></tr><tr><th>Owner</th><td>BookEasy Security</td></tr><tr><th>Expires</th><td>April 22, 2026 (simulated)</td></tr><tr><th>Next step</th><td>Test the booking again, then record approval</td></tr></tbody></table></section>
+        <section id="audit" class="card"><h2>Audit and access</h2><p class="muted">Viewer users can review events. Admin users can change rules and exceptions. Every change is recorded.</p><a class="button" href="#overview">Return to overview</a></section>
+      </main>
+    </div>
+    <footer>Fictional portfolio prototype · No real traffic, customer data, or security engine is connected.</footer>
+  </div>
+</body>
+</html>
