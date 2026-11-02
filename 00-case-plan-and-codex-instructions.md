@@ -75,4 +75,4 @@ Prepare test results, BookEasy acceptance, launch decision, execution record, st
 - Documents 19-27 - execution, issue resolution, pilot, release, handover, closure, and portfolio summary: drafted.
 - Evidence repository: created and public, with the prototype, three GitHub Projects snapshots, and the case documents.
 - Printable pack: created and checked as `aegisshield-appprotect-case.pdf`.
-- Website page: the final packaging step is being added at `/portfolio/aegisshield-appprotect`.
+- Website page: published at `https://www.by-evamarquez.com/portfolio/aegisshield-appprotect` with links to the PDF, prototype, repository, and board evidence.
