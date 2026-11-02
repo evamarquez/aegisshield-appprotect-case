@@ -67,3 +67,14 @@ Each part will be reviewed in order. The next document is not treated as approve
 The prototype is in the [prototype folder](prototype/). It is a visual, non-functional demonstration using fictional data.
 
 The delivery, prototype, test, execution, close-out, and portfolio documents will be added as the remaining stages are completed.
+
+## External evidence
+
+- [Week 2 planning board](https://github.com/users/evamarquez/projects/6)
+- [Week 6 issue board](https://github.com/users/evamarquez/projects/7)
+- [Week 8 close-out board](https://github.com/users/evamarquez/projects/8)
+- [Repository issues](https://github.com/evamarquez/aegisshield-appprotect-case/issues)
+- [Prototype screenshot](screenshots/appprotect-prototype.png)
+- [Week 2 board screenshot](screenshots/github-board-week-02.png)
+- [Week 6 board screenshot](screenshots/github-board-week-06.png)
+- [Week 8 board screenshot](screenshots/github-board-week-08.png)
