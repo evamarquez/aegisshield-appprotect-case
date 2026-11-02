@@ -10,9 +10,9 @@ AegisShield AppProtect is a proposed web application firewall service. It would 
 
 BookEasy is the proposed pilot customer. BookEasy operates an online scheduling application, so the case must balance security with the need to keep login and booking available for legitimate users.
 
-## Current stage
+## Delivery status
 
-Product definition and technical validation.
+Complete simulated case: product definition, technical validation, execution evidence, pilot decision, handover, closure, and printable packaging.
 
 The case is still fictional. Customer needs, competitor findings, costs, technical options, and results must be labeled as simulated assumptions or simulated findings.
 
@@ -66,10 +66,11 @@ Each part will be reviewed in order. The next document is not treated as approve
 
 The prototype is in the [prototype folder](prototype/). It is a visual, non-functional demonstration using fictional data.
 
-The delivery, prototype, test, execution, close-out, and portfolio documents will be added as the remaining stages are completed.
+The full document set is complete. The printable PDF is available in [artifacts](artifacts/).
 
 ## External evidence
 
+- [Printable case PDF](artifacts/aegisshield-appprotect-case.pdf)
 - [Week 2 planning board](https://github.com/users/evamarquez/projects/6)
 - [Week 6 issue board](https://github.com/users/evamarquez/projects/7)
 - [Week 8 close-out board](https://github.com/users/evamarquez/projects/8)

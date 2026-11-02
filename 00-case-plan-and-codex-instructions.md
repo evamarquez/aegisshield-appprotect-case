@@ -73,4 +73,6 @@ Prepare test results, BookEasy acceptance, launch decision, execution record, st
 - Documents 10-15 - delivery planning and technical design: drafted.
 - Documents 16-18 - tests, risks, data protection, and operational readiness: drafted.
 - Documents 19-27 - execution, issue resolution, pilot, release, handover, closure, and portfolio summary: drafted.
-- Next: create the separate evidence repository, capture the board states and prototype, then prepare the printable pack and website page.
+- Evidence repository: created and public, with the prototype, three GitHub Projects snapshots, and the case documents.
+- Printable pack: created and checked as `aegisshield-appprotect-case.pdf`.
+- Website page: the final packaging step is being added at `/portfolio/aegisshield-appprotect`.
